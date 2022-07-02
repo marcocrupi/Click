@@ -14,3 +14,8 @@
   border: none;
   text-transform: capitalize;
 }
+
+*::selection{
+    background: var(--pink);
+    color: #fff;
+}
