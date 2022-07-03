@@ -1,7 +1,7 @@
 :root {
-  --purple: #814096;
-  --pink: #f83292;
-  --gradient: linear-gradient(90deg, var(--purple), var(--pink));
+  --firstColor: #814096;
+  --secondColor: #f83292;
+  --gradient: linear-gradient(90deg, var(--firstColor), var(--secondColor));
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 *::selection {
-  background: var(--pink);
+  background: var(--secondColor);
   color: #fff;
 }
 
@@ -41,4 +41,13 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: var(--firstColor);
+}
+
+header .logo span {
+  color: var(--secondColor);
 }
