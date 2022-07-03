@@ -29,6 +29,29 @@ body {
   background: #f9f9f9;
 }
 
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 5rem;
+  background: var(--gradient);
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -74,12 +97,60 @@ header label {
   opacity: 0;
 }
 
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/home-bg-img.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .image img {
+  width: 40vw;
+  animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-3.5rem);
+  }
+}
+
+.home .content h3 {
+  font-size: 5.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.home .content h3 span {
+  color: var(--secondColor);
+  text-transform: uppercase;
+}
+
+.home .content p {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
 /* media queries */
 
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
     overflow-x: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 0 3%;
+    padding-top: 7.5rem;
   }
 }
 
@@ -101,6 +172,7 @@ header label {
     transform-origin: top;
     transform: scaleY(0);
     opacity: 0;
+    transition: 0.2s linear;
   }
 
   header .navbar a {
@@ -115,7 +187,23 @@ header label {
   }
 
   header input:checked ~ label::before {
-    content: '\f00d';
+    content: "\f00d";
+  }
+
+  .home {
+    flex-flow: column-reverse;
+  }
+
+  .home .image img {
+    width: 100%;
+  }
+
+  .home .content h3 {
+    font-size: 3.6rem;
+  }
+
+  .home .content p {
+    font-size: 1.5rem;
   }
 }
 
