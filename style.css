@@ -51,3 +51,13 @@ header .logo {
 header .logo span {
   color: var(--secondColor);
 }
+
+header .navbar a {
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color: var(--firstColor);
+}
+
+header .navbar a:hover {
+  color: var(--secondColor);
+}
