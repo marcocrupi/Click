@@ -191,7 +191,7 @@ header label {
 }
 
 .about {
-  background: url(/images/about-bg.png) no-repeat;
+  background: url(./images/about-bg.png) no-repeat;
   background-size: cover;
   background-position: center;
   padding-bottom: 3rem;
@@ -234,7 +234,7 @@ header label {
 .newsletter {
   text-align: center;
   padding: 5rem 1rem;
-  background: url(images/subscribe-bg.png) no-repeat;
+  background: url(./images/subscribe-bg.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
