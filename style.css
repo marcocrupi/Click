@@ -1,7 +1,10 @@
 :root {
-  --firstColor: #814096;
-  --secondColor: #f83292;
+  --firstColor: #00cc22;
+  --secondColor: #059FDA;
   --gradient: linear-gradient(90deg, var(--firstColor), var(--secondColor));
+  --thirdColor: #000;
+  --fourthColor: #fff;
+  --gradientVariation: linear-gradient(90deg, var(--fourthColor), var(--secondColor));
 }
 
 * {
@@ -83,8 +86,9 @@ header {
 }
 
 header .logo {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--firstColor);
+  font-weight: bold;
 }
 
 header .logo span {
@@ -92,9 +96,16 @@ header .logo span {
 }
 
 header .navbar a {
-  font-size: 1.7rem;
-  margin-left: 2rem;
+  font-size: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-right: .1rem solid rgb(150, 150, 150);
   color: var(--firstColor);
+  text-transform: uppercase;
+}
+
+#contactHeader {
+  border-right: none;
 }
 
 header .navbar a:hover {
@@ -117,7 +128,7 @@ header label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./images/home-bg-img.png);
+  background: url(./images/Cattura.PNG);
   background-size: cover;
   background-position: center;
   padding-bottom: 2.5rem;
@@ -140,18 +151,18 @@ header label {
 
 .home .content h3 {
   font-size: 5.5rem;
-  color: #333;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
 }
 
 .home .content h3 span {
-  color: var(--secondColor);
+  color: var(--firstColor);
   text-transform: uppercase;
 }
 
 .home .content p {
   font-size: 1.7rem;
-  color: #666;
+  color: rgb(0, 0, 0);
   padding: 1rem 0;
 }
 
@@ -558,9 +569,7 @@ header label {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
   }
-}
 
-@media (max-width: 768px) {
   header label {
     visibility: visible;
     opacity: 1;
@@ -571,7 +580,7 @@ header label {
     top: 100%;
     left: 0;
     width: 100%;
-    background: #fff;
+    background: rgb(255, 255, 255);
     padding: 1rem 2rem;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -595,7 +604,10 @@ header label {
   header input:checked ~ label::before {
     content: "\f00d";
   }
+}
 
+@media (max-width: 768px) {
+  
   .home {
     flex-flow: column-reverse;
   }
