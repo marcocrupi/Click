@@ -2,9 +2,6 @@
   --firstColor: #00cc22;
   --secondColor: #059FDA;
   --gradient: linear-gradient(90deg, var(--firstColor), var(--secondColor));
-  --thirdColor: #000;
-  --fourthColor: #fff;
-  --gradientVariation: linear-gradient(90deg, var(--fourthColor), var(--secondColor));
 }
 
 * {
@@ -121,7 +118,7 @@ header label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./images/Cattura.PNG);
+  background: url(./images/home-bg-img-ab.PNG);
   background-size: cover;
   background-position: center;
   padding-bottom: 2.5rem;
@@ -196,7 +193,7 @@ header label {
 }
 
 .about {
-  background: url(./images/about-bg.png) no-repeat;
+  background: url(./images/about-bg-img-ab2.PNG) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -238,19 +235,20 @@ header label {
 .newsletter {
   text-align: center;
   padding: 5rem 1rem;
-  background: url(./images/subscribe-bg.png) no-repeat;
+  background: var(--gradient);
   background-size: cover;
   background-position: center;
 }
 
 .newsletter h3 {
-  color: #fff;
+  /* color: rgb(0, 0, 0); */
   font-size: 3rem;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .newsletter p {
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 1.6rem;
   text-transform: uppercase;
   margin: 2rem auto;
@@ -260,7 +258,7 @@ header label {
 .newsletter form {
   display: flex;
   max-width: 70rem;
-  border: 0.2rem solid #fff;
+  border: 0.2rem solid #ffffff;
   padding: 0.5rem;
   border-radius: 5rem;
   margin: 2rem auto;
@@ -272,13 +270,13 @@ header label {
   font-size: 1.7rem;
   background: none;
   width: 100%;
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-transform: none;
   background: none;
 }
 
 .newsletter form input[type="email"]::placeholder {
-  color: #eee;
+  color: rgb(255, 255, 255);
   text-transform: capitalize;
 }
 
@@ -288,6 +286,8 @@ header label {
   font-size: 1.7rem;
   border-radius: 5rem;
   cursor: pointer;
+  color: var(--firstColor);
+  font-weight: bold;
 }
 
 .newsletter form input[type="submit"]:hover {
@@ -478,7 +478,7 @@ header label {
 
 .footer {
   padding-top: 3rem;
-  background: url(./images/footer-bg.png) no-repeat;
+  background: var(--gradient);
   background-size: cover;
   background-position: center;
 }
