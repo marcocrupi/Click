@@ -97,15 +97,8 @@ header .logo span {
 
 header .navbar a {
   font-size: 2rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  border-right: .1rem solid rgb(150, 150, 150);
+  margin-left: 2rem;
   color: var(--firstColor);
-  /* text-transform: uppercase; */
-}
-
-#contactHeader {
-  border-right: none;
 }
 
 header .navbar a:hover {
@@ -594,7 +587,6 @@ header label {
     display: block;
     margin: 2rem 0;
     font-size: 2rem;
-    border: none;
   }
 
   header input:checked ~ .navbar {
