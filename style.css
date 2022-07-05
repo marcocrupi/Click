@@ -101,7 +101,7 @@ header .navbar a {
   padding-right: 1.5rem;
   border-right: .1rem solid rgb(150, 150, 150);
   color: var(--firstColor);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #contactHeader {
