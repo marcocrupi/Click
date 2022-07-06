@@ -20,15 +20,29 @@
 
   <!-- custom css file link -->
   <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
   <!-- header section starts -->
 
-  <header>
+  <header id="header">
     <a href="#" class="logo"><span>Click</span>App</a>
 
-    <input type="checkbox" id="menu-bar" />
+    <div id="toggle"></div>
+    <div id="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!-- START OLD VERSION NAVBAR (NO CLOSE AT CLICK) -->
+
+    <!-- <input type="checkbox" id="menu-bar"/>
     <label for="menu-bar" class="fas fa-bars"></label>
 
     <nav class="navbar">
@@ -38,7 +52,9 @@
       <a href="#review">review</a>
       <a href="#pricing">pricing</a>
       <a href="#contact" id="contactHeader">contact</a>
-    </nav>
+    </nav> -->
+
+    <!-- END OLD VERSION NAVBAR (NO CLOSE AT CLICK) -->
   </header>
 
   <!-- header section ends -->
@@ -369,6 +385,8 @@
 
   <!-- footer section end -->
 
+  <!-- custom javascript link -->
+  <script src="script.js"></script>
 </body>
 
 </html>
