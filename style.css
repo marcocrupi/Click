@@ -720,7 +720,7 @@ header label {
   }
 
   #navbar.active {
-    height: calc(100vh - 60px);
+    height: calc(100% - 60px);
     bottom: 0;
     width: 100%;
   }
