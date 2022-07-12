@@ -1,7 +1,7 @@
 :root {
   --firstColor: #00cc22;
   --secondColor: #059fda;
-  --gradient: linear-gradient(90deg, var(--firstColor), var(--secondColor));
+  --gradient: linear-gradient(45deg, var(--firstColor), var(--secondColor));
 }
 
 * {
@@ -75,6 +75,7 @@ header {
   top: 0;
   right: 0;
   width: 100%;
+  height: 7rem;
   background: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 0 9%;
@@ -118,8 +119,6 @@ header .logo span {
   color: var(--secondColor);
 }
 
-
-
 #navbar ul {
   position: relative;
   display: flex;
@@ -132,8 +131,8 @@ header .logo span {
 
 #navbar ul li a {
   color: var(--firstColor);
-  height: 60px;
-  line-height: 60px;
+  height: 7rem;
+  line-height: 7rem;
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
@@ -188,10 +187,12 @@ header label {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0rem);
   }
+
   50% {
     transform: translateY(-3.5rem);
   }
@@ -525,10 +526,10 @@ header label {
   transition: 0.2s linear;
 }
 
-.contact form .inputBox input:focus ~ label,
-.contact form .inputBox input:valid ~ label,
-.contact form .inputBox textarea:focus ~ label,
-.contact form .inputBox textarea:valid ~ label {
+.contact form .inputBox input:focus~label,
+.contact form .inputBox input:valid~label,
+.contact form .inputBox textarea:focus~label,
+.contact form .inputBox textarea:valid~label {
   top: -0.5rem;
   font-size: 1.5rem;
   color: var(--secondColor);
@@ -538,21 +539,32 @@ header label {
   max-width: 90%;
   margin: auto;
 }
+
 .footer .container .row {
   display: flex;
   flex-wrap: wrap;
 }
+
 .footer .container .row ul {
   list-style: none;
 }
+
 .footer {
   background-color: #24262b;
   padding-top: 2.5rem;
 }
+
 .footer-col {
   width: 25%;
   padding: 0 15px;
+  text-align: center;
 }
+
+.centerFooter {
+  display: inline-block;
+  text-align: left;
+}
+
 .footer-col h4 {
   font-size: 18px;
   color: #ffffff;
@@ -561,6 +573,7 @@ header label {
   font-weight: 500;
   position: relative;
 }
+
 .footer-col h4::before {
   content: "";
   position: absolute;
@@ -571,9 +584,11 @@ header label {
   box-sizing: border-box;
   width: 50px;
 }
+
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .footer-col ul li a {
   font-size: 1.6rem;
   text-transform: capitalize;
@@ -584,6 +599,7 @@ header label {
   display: block;
   transition: all 0.3s ease;
 }
+
 .footer-col ul li a:hover {
   background: var(--gradient);
   color: transparent;
@@ -591,6 +607,7 @@ header label {
   background-clip: text;
   padding-left: 8px;
 }
+
 .footer-col .social-links a {
   display: inline-block;
   height: 40px;
@@ -603,6 +620,7 @@ header label {
   color: #ffffff;
   transition: all 0.5s ease;
 }
+
 .footer-col .social-links a:hover {
   color: #24262b;
   background: var(--gradient);
@@ -666,15 +684,15 @@ header label {
     position: absolute;
     top: 0;
     right: 0;
-    width: 60px;
-    height: 60px;
+    width: 7rem;
+    height: 7rem;
     background: var(--firstColor);
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   #toggle::before {
     content: "";
     position: absolute;
@@ -684,7 +702,7 @@ header label {
     transform: translateY(-5px);
     transition: 0.2s;
   }
-  
+
   #toggle::after {
     content: "";
     position: absolute;
@@ -694,15 +712,15 @@ header label {
     transform: translateY(5px);
     transition: 0.2s;
   }
-  
+
   #toggle.active::before {
     transform: translateY(0px) rotate(45deg);
   }
-  
+
   #toggle.active::after {
     transform: translateY(0px) rotate(-45deg);
   }
-  
+
   #toggle.active {
     background: var(--secondColor);
   }
@@ -720,7 +738,7 @@ header label {
   }
 
   #navbar.active {
-    height: calc(100% - 60px);
+    height: calc(100% - 7rem);
     bottom: 0;
     width: 100%;
   }
@@ -797,8 +815,23 @@ header label {
   }
 
   .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .footer-col h4::before {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .centerFooter {
+    display:inline-block;
+    text-align: center;
   }
 }
 
